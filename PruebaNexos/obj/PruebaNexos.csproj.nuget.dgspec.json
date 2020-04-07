@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\admin\\source\\repos\\PruebaNexos\\PruebaNexos\\PruebaNexos.csproj": {}
+    "C:\\Users\\admin\\source\\repos\\CapacitacionJoaquinCardenasBackEnd\\PruebaNexos\\PruebaNexos.csproj": {}
   },
   "projects": {
-    "C:\\Users\\admin\\source\\repos\\PruebaNexos\\PruebaNexos\\PruebaNexos.csproj": {
+    "C:\\Users\\admin\\source\\repos\\CapacitacionJoaquinCardenasBackEnd\\PruebaNexos\\PruebaNexos.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\admin\\source\\repos\\PruebaNexos\\PruebaNexos\\PruebaNexos.csproj",
+        "projectUniqueName": "C:\\Users\\admin\\source\\repos\\CapacitacionJoaquinCardenasBackEnd\\PruebaNexos\\PruebaNexos.csproj",
         "projectName": "PruebaNexos",
-        "projectPath": "C:\\Users\\admin\\source\\repos\\PruebaNexos\\PruebaNexos\\PruebaNexos.csproj",
+        "projectPath": "C:\\Users\\admin\\source\\repos\\CapacitacionJoaquinCardenasBackEnd\\PruebaNexos\\PruebaNexos.csproj",
         "packagesPath": "C:\\Users\\admin\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\admin\\source\\repos\\PruebaNexos\\PruebaNexos\\obj\\",
+        "outputPath": "C:\\Users\\admin\\source\\repos\\CapacitacionJoaquinCardenasBackEnd\\PruebaNexos\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",
@@ -68,10 +68,6 @@
               "suppressParent": "All",
               "target": "Package",
               "version": "[3.1.1, )"
-            },
-            "Microsoft.Extensions.Identity.Core": {
-              "target": "Package",
-              "version": "[3.1.3, )"
             },
             "Microsoft.Extensions.Logging.Console": {
               "target": "Package",

@@ -31,5 +31,41 @@ namespace PruebaNexos.DataLayer
         }
 
         public DbSet<Paciente> Pacientes { get; set; }
+
+        public DbSet<Medico> Medicos { get; set; }
+        public DbSet<MedicoPaciente> MedicoPacientes { get; set; }
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            //Medico
+            modelBuilder.Entity<Medico>()
+                .Property(b => b.Especialidad)
+                .HasMaxLength(60).IsRequired(true);
+            modelBuilder.Entity<Medico>()
+              .Property(b => b.Correo)
+              .HasMaxLength(120).IsRequired(true);
+            modelBuilder.Entity<Medico>()
+             .Property(b => b.CodigoMedico)
+             .HasMaxLength(40).IsRequired(true);
+            modelBuilder.Entity<Medico>()
+            .Property(b => b.Telefono)
+            .HasMaxLength(40);
+            modelBuilder.Entity<Medico>()
+             .Property(b => b.Nombres)
+             .HasMaxLength(120).IsRequired(true);
+
+            //Medico paciente
+            modelBuilder.Entity<MedicoPaciente>()
+              .HasOne(p => p.Medico)
+              .WithMany(b => b.MedicosPaciente)
+              .HasForeignKey(p => p.Medico_Id)
+              .HasConstraintName("FK_MEDP_MED");
+
+            modelBuilder.Entity<MedicoPaciente>()
+              .HasOne(p => p.Paciente)
+              .WithMany(b => b.MedicosPaciente)
+              .HasForeignKey(p => p.Paciente_Id)
+              .HasConstraintName("FK_MEDP_PAC");
+
+        }
     }
 }

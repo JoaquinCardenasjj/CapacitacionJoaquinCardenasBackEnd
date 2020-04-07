@@ -13,6 +13,7 @@ namespace PruebaNexos.DataLayer
         public string Nombre { get; set; }
         public string NumeroSeguroSocial { get; set; }
         public string MedicoPreferido { get; set; }
+        public List<MedicoPaciente> MedicosPaciente { get; set; }
 
     }
 }
